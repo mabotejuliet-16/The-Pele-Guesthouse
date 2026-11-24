@@ -33,7 +33,7 @@
   <body>
     <nav class="navbar navbar-expand-md bg-light" data-bs-theme="light">
       <div class="container">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="index.html">
           <img
             src="src/images/pele guesthouse logo light.webp"
             alt="The Pele Guesthouse"
@@ -56,27 +56,80 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/rooms">Rooms</a>
+              <a class="nav-link" href="rooms.html">Rooms</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/amenities">Amenities</a>
+              <a class="nav-link" href="amenities.html">Amenities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/location">Location</a>
+              <a class="nav-link" href="location.html">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/reviews">Reviews</a>
+              <a class="nav-link" href="reviews.html">Reviews</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <header class="hero d-flex align-items-center text-white text-center">
+      <div class="header-content">
+        <h1>YOUR HOME AWAY <br />FROM HOME</h1>
+        <p class="lead text-center">
+          Experience authentic South African hospitality in our couzy
+          5-guesthouse.
+        </p>
+      </div>
+    </header>
+
+    <section class="container booking-bar">
+      <div class="booking-bar bg-white p-4 rounded shadow">
+        <form class="row g-3 align-items-end">
+          <div class="col-md-3">
+            <label for="checkin" class="form-label">Check-in</label>
+            <input type="date" class="form-control" id="checkin" required />
+          </div>
+          <div class="col-md-3">
+            <label for="checkout" class="form-label">Check-out</label>
+            <input type="date" class="form-control" id="checkout" required />
+          </div>
+          <div class="col-md-3">
+            <label for="guests" class="form-label">Guests</label>
+            <select class="form-select" id="guests" required>
+              <option value="" disabled selected>
+                Select number of guests
+              </option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7">7 Guests</option>
+              <option value="8">8 Guests</option>
+              <option value="9">9 Guests</option>
+              <option value="10">10 Guests</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="submit"
+              class="btn btn-availability w-100 rounded-pill bg-danger text-white"
+            >
+              Check Availability
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <footer class="container bg-dark text-light text-center py-4">
       <div class="boxes">
@@ -99,9 +152,13 @@
       </div>
       <p>
         This project was coded by Ntaoleng J. Mabote and is
-        <a href="https://github.com/mabotejuliet-16" target="_blank">
-          open-source</a
+        <a
+          href="https://github.com/mabotejuliet-16"
+          target="_blank"
+          rel="noopener noreferrer"
         >
+          open-source
+        </a>
       </p>
     </footer>
   </body>

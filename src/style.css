@@ -16,3 +16,35 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+header {
+  min-height: 70vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/pele hero img.jpg");
+  max-width: 1200px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 80px;
+  text-align: center;
+  justify-content: center;
+}
+
+header h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.booking-bar {
+  margin-top: -55px;
+  position: relative;
+  z-index: 10;
+  max-width: 960px;
+}
+
+.btn-availability:hover {
+  background-color: #845643;
+  color: white;
+}
