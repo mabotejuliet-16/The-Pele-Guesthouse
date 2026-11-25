@@ -39,6 +39,7 @@ header h1 {
 
 .booking-bar {
   margin-top: -55px;
+  margin-bottom: 50px;
   position: relative;
   z-index: 10;
   max-width: 960px;
@@ -47,4 +48,39 @@ header h1 {
 .btn-availability:hover {
   background-color: #845643;
   color: white;
+}
+
+.rooms-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.room {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.room img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .rooms-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .rooms-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 0 12px;
+  }
 }
