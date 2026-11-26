@@ -71,16 +71,72 @@ header h1 {
   object-fit: cover;
 }
 
-@media (max-width: 900px) {
-  .rooms-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
 }
 
-@media (max-width: 560px) {
+.about-section h1,
+.about-section h2,
+.about-section h3 {
+  color: rgb(36, 2, 68);
+  text-decoration: underline;
+}
+.photo-column {
+  min-width: 0;
+}
+
+.photo-column img {
+  display: block;
+  width: 100%;
+  max-height: 550px;
+
+  object-position: center;
+  border-radius: 12px;
+}
+
+.text-column {
+  min-width: 0;
+
+  border-radius: 10px;
+}
+
+.text-column p {
+  font-size: 20px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.amenities-section {
+  margin: 30px;
+  padding: 20px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
   .rooms-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    padding: 0 12px;
+    grid-template-columns: repeat(3, (1fr));
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .text-column P {
+    font-size: 15px;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
   }
 }
