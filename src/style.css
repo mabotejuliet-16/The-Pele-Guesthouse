@@ -40,6 +40,7 @@ header {
   padding-bottom: 80px;
   text-align: center;
   justify-content: center;
+  filter: brightness(86%) hue-rotate(5deg) invert(4%);
 }
 
 header h1 {
@@ -79,6 +80,11 @@ header h1 {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.rates-section {
+  margin: 30px;
+  padding: 20px;
 }
 
 .story-grid {
