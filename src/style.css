@@ -90,9 +90,9 @@ header h1 {
   padding: 20px;
 }
 
-.about-section h1,
-.about-section h2,
-.about-section h3 {
+main h1,
+main h2,
+main h3 {
   color: rgb(36, 2, 68);
   text-decoration: underline;
 }
@@ -129,6 +129,10 @@ header h1 {
   margin: 30px;
   padding: 20px;
   align-items: center;
+}
+
+#location {
+  text-align: center;
 }
 
 @media (max-width: 900px) {
